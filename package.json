@@ -6,9 +6,11 @@
   "scripts": {
     "server": "ts-node-dev --respawn src/index.ts",
     "build": "rimraf ./build && tsc -p",
-    "start": "cross-env NODE_ENV=production yarn build && node build/index.js",
+    "start": "cross-env NODE_ENV=production concurrently \"yarn server\" \"yarn client:build\" ",
     "client": "yarn --cwd src/client start",
     "client:install": "yarn --cwd src/client install",
+    "server:install": "yarn install",
+    "app:install": "concurrently \"yarn client:install\" \"yarn server:install\"",
     "client:build": "yarn --cwd src/client build",
     "dev": "cross-env NODE_ENV=development concurrently \"yarn client\" \"yarn server\""
   },
