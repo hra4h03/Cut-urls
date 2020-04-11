@@ -1,0 +1,26 @@
+@import '~materialize-css';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+  input.yellow-input { 
+    border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 00 #fff !important;
+  }
+  input.yellow-input + label {
+    color: #fff!important;
+  }
+  input.yellow-input + label {
+    color: #fff!important;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
