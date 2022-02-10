@@ -42,7 +42,7 @@
     "jsonwebtoken": "^8.5.1",
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.9.7",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "shortid": "^2.2.15",
     "ts-node-dev": "^1.0.0-pre.44"
   }
